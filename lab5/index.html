@@ -9,10 +9,20 @@
 <body>
     <div id="start-screen">
         <h1>Оберіть складність</h1>
-        <button onclick="startGame('easy')">Легко (10 сек)</button>
-        <button onclick="startGame('medium')">Середньо (3 сек)</button>
-        <button onclick="startGame('hard')">Важко (1 сек)</button>
+        <div class="menu-section">
+            <button onclick="startGame('easy')">Легко (10 сек)</button>
+            <button onclick="startGame('medium')">Середньо (3 сек)</button>
+            <button onclick="startGame('hard')">Важко (1 сек)</button>
+        </div>
+
+        <h1>Оберіть колір</h1>
+        <div class="color-selector">
+            <button class="color-btn" style="background-color: green;" onclick="setColor('green')"></button>
+            <button class="color-btn" style="background-color: red;" onclick="setColor('red')"></button>
+            <button class="color-btn" style="background-color: blue;" onclick="setColor('blue')"></button>
+        </div>
     </div>
+
     <div class="game-info">
         <p>Score: <span id="score">0</span></p>
         <p>Time left: <span id="time-left">10</span></p>
