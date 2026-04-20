@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Hunt Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Оберіть складність</h1>
+        <button onclick="startGame('easy')">Легко (10 сек)</button>
+        <button onclick="startGame('medium')">Середньо (3 сек)</button>
+        <button onclick="startGame('hard')">Важко (1 сек)</button>
+    </div>
+    <div class="game-info">
+        <p>Score: <span id="score">0</span></p>
+        <p>Time left: <span id="time-left">10</span></p>
+    </div>
+
+    <div class="game-area">
+        <div id="target"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
